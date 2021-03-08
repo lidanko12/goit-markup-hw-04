@@ -162,29 +162,8 @@ body {
 .current {
   color: var(--second-color);
 }
-.mail {
-  display: inline-flex;
-  margin-left: 50px;
-}
-.mail::before {
-  content: '';
-  height: 12px;
-  width: 16px;
-  background-image: url('../images/icon/envelope.svg');
-  margin-right: 10px;
-  align-items: center;
-}
 .tel {
-  display: inline-flex;
   margin-left: 50px;
-}
-.tel::before {
-  content: '';
-  height: 16px;
-  width: 10px;
-  background-image: url('../images/icon/smartphone.svg');
-  margin-right: 10px;
-  align-items: center;
 }
 
 .tel-link {
