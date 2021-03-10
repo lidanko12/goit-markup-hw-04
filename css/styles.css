@@ -28,6 +28,7 @@ img {
   --tel-link-color: #757575;
   --border-color: #eeeeee;
   --footer-link: rgba(255, 255, 255, 0.6);
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -108,6 +109,34 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--nav-color);
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icon-color);
+  background-color: #ffffff;
+}
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--second-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--main-color);
 }
 /*===========END COMPONENT==========*/
 
@@ -202,8 +231,7 @@ body {
 .overlay {
   max-width: 1600px;
   height: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -255,6 +283,25 @@ body {
   letter-spacing: 0.03em;
   color: var(--tel-link-color);
 }
+.features-pic {
+  display: flex;
+  margin-bottom: 30px;
+}
+.pictures-lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-background);
+}
+.features-item {
+}
+.features-icon {
+  height: 70px;
+  width: 70px;
+}
+
 /*===========END FEATURES==========*/
 
 /*===========DOING==========*/
@@ -316,6 +363,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--tel-link-color);
+  margin-bottom: 14px;
 }
 /*===========END OUR TEAM==========*/
 
@@ -335,7 +383,6 @@ body {
   flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
   margin-top: 50px;
-  content: '';
   height: 90px;
   background: var(--main-background);
   border-radius: 4px;
@@ -349,6 +396,7 @@ body {
 
 /*===========FOOTER==========*/
 .footer {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--second-background);
@@ -375,6 +423,11 @@ body {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--second-color);
+}
+.fotter-link {
+  display: flex;
+  width: 206px;
+  height: 80px;
 }
 /*=========== END FOOTER==========*/
 
