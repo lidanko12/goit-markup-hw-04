@@ -307,22 +307,35 @@ body {
   letter-spacing: 0.03em;
   color: var(--tel-link-color);
 }
-.features-pic {
-  display: flex;
-  margin-bottom: 30px;
-}
+
 .pictures-lists {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 270px;
+  flex-wrap: nowrap;
   height: 120px;
+
+  margin-top: -50px;
+  margin-left: -30px;
+  justify-content: center;
   background-color: var(--team-background);
+  margin-bottom: 30px;
+  border: 1px solid red;
 }
 
+.features-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 50px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  border: 1px solid red;
+}
 .features-icon {
-  height: 70px;
   width: 70px;
+  height: 70px;
 }
 
 /*===========END FEATURES==========*/
@@ -467,13 +480,16 @@ body {
 .contact-link:focus {
   color: var(--second-color);
 }
+
 .fotter-link {
   display: flex;
-  width: 206px;
-  height: 80px;
+  align-items: center;
+  justify-content: center;
 }
-.join {
-  display: flex;
+.join-us {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 70px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14px;
@@ -482,6 +498,29 @@ body {
 
   color: var(--main-color);
 }
+.soc-list {
+  display: flex;
+  align-items: baseline;
+}
+.soc-list-item :not(:last-child) {
+  margin-right: 10px;
+}
+
+.soc-list-link {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-color);
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+.soc-list-icon {
+  width: 20px;
+  height: 20px;
+}
+
 /*=========== END FOOTER==========*/
 
 /*===========PORTFOLIO MENU==========*/
