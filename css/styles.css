@@ -300,13 +300,9 @@ body {
   color: var(--nav-color);
 }
 .features-lists {
-  display: flex;
-  align-items: center;
   margin-left: -30px;
 }
 .features-lists-item {
-  display: flex;
-  align-items: center;
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
@@ -321,7 +317,7 @@ body {
   color: var(--tel-link-color);
 }
 .pictures-list {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
