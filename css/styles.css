@@ -198,7 +198,6 @@ body {
 .tel-link {
   display: flex;
   align-items: center;
-  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -225,9 +224,9 @@ body {
   fill: var(--second-color);
 }
 .tel-icon {
-  display: inline-block;
-  width: 16px;
+  display: block;
   height: 12px;
+  width: 16px;
   margin-right: 10px;
   fill: var(--tel-link-color);
 }
@@ -286,8 +285,6 @@ body {
   padding-bottom: 94px;
 }
 .features-lists {
-  display: flex;
-  align-items: center;
 }
 
 .features-list {
@@ -299,6 +296,19 @@ body {
   text-transform: uppercase;
   color: var(--nav-color);
 }
+.features-lists {
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.features-lists-item {
+  display: flex;
+  align-items: center;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 
 .features-desc {
   font-weight: 400;
@@ -307,35 +317,20 @@ body {
   letter-spacing: 0.03em;
   color: var(--tel-link-color);
 }
-
-.pictures-lists {
-  display: flex;
+.pictures-list {
+  justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  margin-bottom: 30px;
+  width: 270px;
   height: 120px;
-
-  margin-top: -50px;
-  margin-left: -30px;
-  justify-content: center;
   background-color: var(--team-background);
-  margin-bottom: 30px;
-  border: 1px solid red;
+  border: 1px solid black;
 }
 
-.features-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 50px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  border: 1px solid red;
-}
 .features-icon {
   width: 70px;
   height: 70px;
+  margin-bottom: 55px;
 }
 
 /*===========END FEATURES==========*/
@@ -481,26 +476,29 @@ body {
   color: var(--second-color);
 }
 
-.fotter-link {
+.footer-flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: baseline;
+}
+
+.fotter-link {
+  margin-left: 70px;
 }
 .join-us {
   display: block;
   margin-bottom: 20px;
-  margin-left: 70px;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--main-color);
 }
 .soc-list {
   display: flex;
-  align-items: baseline;
+}
+.soc-list-item {
+  margin-right: 10px;
 }
 .soc-list-item :not(:last-child) {
   margin-right: 10px;
@@ -514,11 +512,16 @@ body {
   color: var(--icon-color);
   justify-content: center;
   align-items: center;
+  fill: var(--main-color);
   background: rgba(255, 255, 255, 0.1);
 }
 .soc-list-icon {
   width: 20px;
   height: 20px;
+}
+.soc-list-link:hover,
+.soc-list-link:focus {
+  background-color: var(--second-color);
 }
 
 /*=========== END FOOTER==========*/
