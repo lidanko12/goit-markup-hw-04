@@ -162,6 +162,7 @@ body {
 .items-link {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 .items {
   display: flex;
@@ -196,8 +197,10 @@ body {
 }
 
 .tel-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -224,23 +227,10 @@ body {
   fill: var(--second-color);
 }
 .tel-icon {
-  display: block;
-  height: 12px;
-  width: 16px;
   margin-right: 10px;
   fill: var(--tel-link-color);
 }
-.mail-icon {
-  display: inline-block;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: var(--tel-link-color);
-}
-.tel-link:hover .mail-icon,
-.tel-link:focus .mail-icon {
-  fill: var(--second-color);
-}
+
 /*===========END HEADER=========*/
 
 /*===========HERO==========*/
